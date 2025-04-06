@@ -35,6 +35,8 @@ Crie um arquivo `.env`, na raiz do projeto, e adicione as variáveis abaixo:
 
 > **Obs.:** adicione um email real para onde deseja enviar as mensagens e não se esqueça de criar uma **Senha de app** ao invés de usar sua senha pessoal.
 
+
+
 ```
 PORT
 EMAIL_USER
