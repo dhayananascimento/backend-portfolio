@@ -34,8 +34,9 @@ app.post("/contato", async (req, res) => {
     const mailOptions = {
       from: email,
       to: EMAIL_USER,
-      subject: `Mensagem de ${name}, através do portifólio pessoal`,
-      text: message,
+      replyTo: email,
+      subject: `Portfólio pessoal`,
+      text: `Nome: ${name}\nEmail: ${email}\n\nMensagem: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);
